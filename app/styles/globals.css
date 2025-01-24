@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #F6F8F1;
-  --foreground: #573D26;
-  --mainGreen: #2A3810; 
+  --mainWhite: #F6F8F1;
+  --mainBrown: #573D26;
+  --mainGreen: #308561; 
+  --lightTeal: #194D33; 
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--mainBrown);
+  background: var(--mainWhite);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }

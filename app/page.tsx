@@ -15,8 +15,8 @@ export default function Home() {
           />
         </div>
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
-        <p className="text-x mb-6">Computer Vision, Embedded Systems, Full Stack Development</p>
-        <p className="max-w-2xl mx-auto">
+        <h2 className="text-lightTeal text-x  mb-6 s">Computer Vision, Embedded Systems, Full Stack Development</h2>
+        <p className="text-lightTeal max-w-2xl mx-auto">
           Hi! I&apos;m Aidan, let me tell you a little bit about myself. 
           I&apos;m a 3rd year undergraduate student studying Computer Science with Software Development at the University of Liverpool 
           graduating in July 2025.   
@@ -58,7 +58,7 @@ export default function Home() {
             <div className="p-4">
               <h3 className="font-bold mb-2">Project Name</h3>
               <p className="text-gray-600 mb-4">Brief description of the project and the technologies used.</p>
-              <a href="#" className="text-orange hover:text-orange-400">
+              <a href="#" className="text-mainGreen hover:text-orange-400">
                 Learn More →
               </a>
             </div>
@@ -91,7 +91,7 @@ export default function Home() {
           </p>
           <a
             href="mailto:aidanrouai2@gmail.com"
-            className="inline-block bg-mainGreen text-white px-6 py-2 rounded-lg hover:bg-orange-500 transition"
+            className="inline-block bg-mainGreen text-white px-6 py-2 rounded-lg hover:bg-lightTeal transition"
           >
             Contact Me
           </a>
