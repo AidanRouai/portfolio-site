@@ -5,6 +5,7 @@
 :root {
   --mainWhite: #F6F8F1;
   --mainBrown: #573D26;
+  --secondaryBrown: #8a654f;
   --mainGreen: #308561; 
   --lightTeal: #194D33; 
 }
@@ -12,5 +13,6 @@
 body {
   color: var(--mainBrown);
   background: var(--mainWhite);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }

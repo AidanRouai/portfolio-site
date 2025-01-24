@@ -13,6 +13,7 @@ export default {
         mainBrown: "var(--mainBrown)",
         mainGreen: "var(--mainGreen)",
         lightTeal: "var(--lightTeal)",
+        secondaryBrown: "var(--secondaryBrown)",
       },
     },
   },

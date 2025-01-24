@@ -1,5 +1,6 @@
 import './styles/globals.css'
 import Layout from './components/Layout'
+import Script from 'next/script'
 
 export const metadata = {
   title: 'Aidan - Portfolio',
@@ -13,6 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Script src="https://kit.fontawesome.com/8a952142e1.js" strategy="lazyOnload" />
       <body>
         <Layout>{children}</Layout>
       </body>

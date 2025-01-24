@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className="py-12">
       {/* Hero Section */}
       <section className="text-center mb-16">
-        <div className="relative w-40 h-40 mx-auto mb-6 ">
+        <div className="relative w-60 h-60 mx-auto mb-6 ">
           <Image
             src="/IMG_6359.png"
             alt="My pfp"
@@ -15,11 +16,12 @@ export default function Home() {
           />
         </div>
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
-        <h2 className="text-lightTeal text-x  mb-6 s">Computer Vision, Embedded Systems, Full Stack Development</h2>
-        <p className="text-lightTeal max-w-2xl mx-auto">
-          Hi! I&apos;m Aidan, let me tell you a little bit about myself. 
-          I&apos;m a 3rd year undergraduate student studying Computer Science with Software Development at the University of Liverpool 
-          graduating in July 2025.   
+        <h2 className="text-xl text-lightTeal font-bold text-x  mb-6 s">Embedded Systems, Web Development, Computer Vision</h2>
+        <p className="text-lg text-lightTeal max-w-2xl mx-auto">
+          Hi! I&apos;m a software engineer with an insatiable thirst for knowledge, and a passion for building new things.<span> </span>  
+          <Link href="/about" className=" text-mainBrown hover:text-gray-400">
+          Click me to learn more! 
+          </Link>  
         </p>
       </section>
 
@@ -40,7 +42,7 @@ export default function Home() {
             <div className="p-4">
               <h3 className="font-bold mb-2">Project Name</h3>
               <p className="text-gray-600 mb-4">Brief description of the project and the technologies used.</p>
-              <a href="#" className="text-orange hover:text-orange-400">
+              <a href="#" className="text-mainGreen hover:text-lightTeal">
                 Learn More →
               </a>
             </div>
@@ -58,7 +60,7 @@ export default function Home() {
             <div className="p-4">
               <h3 className="font-bold mb-2">Project Name</h3>
               <p className="text-gray-600 mb-4">Brief description of the project and the technologies used.</p>
-              <a href="#" className="text-mainGreen hover:text-orange-400">
+              <a href="#" className="text-mainGreen hover:text-lighTeal">
                 Learn More →
               </a>
             </div>
@@ -73,7 +75,7 @@ export default function Home() {
           {['React', 'Node.js', 'TypeScript', 'Python', 'AWS', 'Docker'].map((skill) => (
             <div
               key={skill}
-              className="bg-gray-50 rounded-lg p-4 text-center hover:bg-gray-100 transition"
+              className=" text-mainWhite bg-mainBrown rounded-lg p-4 text-center hover:bg-secondaryBrown transition"
             >
               {skill}
             </div>
