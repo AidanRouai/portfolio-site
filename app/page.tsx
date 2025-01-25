@@ -13,14 +13,14 @@ export default function Home() {
             fill
             className="rounded-full object-cover"
             style={{ objectPosition: '0 28%' }}
-          />
+          />  
         </div>
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
         <h2 className="text-xl text-lightTeal font-bold text-x  mb-6 s">Embedded Systems, Web Development, Computer Vision</h2>
         <p className="text-lg text-lightTeal max-w-2xl mx-auto">
           Hi! I&apos;m a software engineer with an insatiable thirst for knowledge, and a passion for building new things.<span> </span>  
           <Link href="/about" className=" text-mainBrown hover:text-gray-400">
-          Click me to learn more! 
+          Learn more about me! 
           </Link>  
         </p>
       </section>
@@ -29,6 +29,65 @@ export default function Home() {
       <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          {/* Project Card */}
+          <div className="border rounded-lg overflow-hidden">
+            <div className="aspect-video relative">
+              <Image
+                src="/Screenshot_20240815_172255_WhatsApp.jpg"
+                alt="Project 2"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold mb-2">University Karting Championship</h3>
+              <p className="text-gray-600 mb-4">React based leaderboard actively being used by the UoL racing society.</p>
+              <a href="#" className="text-mainGreen hover:text-lighTeal">
+                Learn More →
+              </a>
+            </div>
+          </div>
+
+          {/* Project Card */}
+          <div className="border rounded-lg overflow-hidden">
+            <div className="aspect-video relative">
+              <Image
+                src="/65ca849f05a6e9da54a59fe2_Forterra.webp"
+                alt="Project 1"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold mb-2">Forterra</h3>
+              <p className="text-gray-600 mb-4">Software Engineering Internship</p>
+              <a href="#" className="text-mainGreen hover:text-lightTeal">
+                {/*https://www.forterra.com/posts/driverless-tech-leader-rrai-rebrands-as-forterra*/}
+                Learn More →
+              </a>
+            </div>
+          </div>
+
+          {/* Project Card */}
+          <div className="border rounded-lg overflow-hidden">
+            <div className="aspect-video relative">
+              <Image
+                src="/"
+                alt="Project 1"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold mb-2"> </h3>
+              <p className="text-gray-600 mb-4"> </p>
+              <a href="#" className="text-mainGreen hover:text-lightTeal">
+                Learn More →
+              </a>
+            </div>
+          </div>
+
           {/* Project Card */}
           <div className="border rounded-lg overflow-hidden">
             <div className="aspect-video relative">
@@ -40,27 +99,28 @@ export default function Home() {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-bold mb-2">Project Name</h3>
-              <p className="text-gray-600 mb-4">Brief description of the project and the technologies used.</p>
+              <h3 className="font-bold mb-2">CAN Bus Visualizer (In progress)</h3>
+              <p className="text-gray-600 mb-4">Visualizer to display OBD2 Controller Area Network log files.</p>
               <a href="#" className="text-mainGreen hover:text-lightTeal">
                 Learn More →
               </a>
             </div>
           </div>
-          {/* Add more project cards as needed */}
+
+          {/* Project Card */}
           <div className="border rounded-lg overflow-hidden">
             <div className="aspect-video relative">
               <Image
-                src="/project2.jpg"
-                alt="Project 2"
+                src="/project1.jpg"
+                alt="Project 1"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="p-4">
-              <h3 className="font-bold mb-2">Project Name</h3>
-              <p className="text-gray-600 mb-4">Brief description of the project and the technologies used.</p>
-              <a href="#" className="text-mainGreen hover:text-lighTeal">
+              <h3 className="font-bold mb-2">CAN Bus Visualizer (In progress)</h3>
+              <p className="text-gray-600 mb-4">Visualizer to display OBD2 Controller Area Network log files.</p>
+              <a href="#" className="text-mainGreen hover:text-lightTeal">
                 Learn More →
               </a>
             </div>
