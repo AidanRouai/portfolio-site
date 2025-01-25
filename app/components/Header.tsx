@@ -15,11 +15,11 @@ export default function Header() {
             </Link>
             <span className="mx-2">|</span>
             <Link href="/about" className="hover:text-gray-400">
-              About
+              About Me
             </Link>
             <span className="mx-2">|</span>
-            <Link href="/projects" className="hover:text-gray-400">
-              Projects
+            <Link href="mailto:aidanrouai2@gmail.com" className="hover:text-gray-400">
+              Contact 
             </Link>
             <span className="mx-2">|</span>
             <Link href="https://github.com/AidanRouai" className="hover:text-gray-400">
@@ -28,7 +28,7 @@ export default function Header() {
             <span className="mx-2">|</span>
             <Link href="https://www.linkedin.com/in/aidan-rouai-66454027b/" className="hover:text-gray-400">
               LinkedIn
-              </Link>
+            </Link>
           </div>
         </div>
       </nav>

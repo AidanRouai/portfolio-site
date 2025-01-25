@@ -19,7 +19,7 @@ export default function Home() {
         <h2 className="text-xl text-lightTeal font-bold text-x  mb-6 s">Embedded Systems, Web Development, Computer Vision</h2>
         <p className="text-lg text-lightTeal max-w-2xl mx-auto">
           Hi! I&apos;m a software engineer with an insatiable thirst for knowledge, and a passion for building new things.<span> </span>  
-          <Link href="/about" className=" text-mainBrown hover:text-gray-400">
+          <Link href="/about" className=" text-mainBrown hover:text-secondaryBrown">
           Learn more about me! 
           </Link>  
         </p>
@@ -147,7 +147,7 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
         <div className="max-w-xl">
-          <p className="text-gray-600 mb-4">
+          <p className="text-mainGreen mb-4">
             I'm always interested in hearing about new projects and opportunities.
             Feel free to reach out!
           </p>
