@@ -10,7 +10,7 @@ export default function Header() {
             Aidan Rouai 
           </Link> */}
           <div className="flex justify-center space-x-4 bg-mainWhite opacity-60 rounded-full px-4 py-2">
-            <Link href="/" className=" text- hover:text-gray-400">
+            <Link href="/" className="hover:text-gray-400">
               Home
             </Link>
             <span className="mx-2">|</span>
