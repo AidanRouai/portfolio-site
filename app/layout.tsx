@@ -2,6 +2,7 @@ import './styles/globals.css'
 import Layout from './components/Layout'
 import Script from 'next/script'
 
+
 export const metadata = {
   title: 'Aidan - Portfolio',
   description: 'Personal portfolio showcasing my projects and skills',

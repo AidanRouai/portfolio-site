@@ -5,22 +5,23 @@ export default function Home() {
   return (
     <div className="py-12">
       {/* Hero Section */}
-      <section className="text-center mb-16">
-        <div className="relative w-60 h-60 mx-auto mb-6 ">
+      <section className="text-left mb-16">
+        <div className="relative w-60 h-60 mb-6 ">
           <Image
             src="/IMG_6359.png"
             alt="My pfp"
             fill
-            className="rounded-full object-cover"
+            className="rounded-full object-cover shadow-2xl border-mainBrown border-2"
             style={{ objectPosition: '0 28%' }}
           />  
         </div>
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
-        <h2 className="text-xl text-darkGreen font-bold text-x  mb-6 s">Embedded Systems, Web Development, Computer Vision</h2>
-        <p className="text-lg text-darkGreen max-w-2xl mx-auto">
+        <h3 className="text-md font-bold mb-4">Bsc Honors Computer Science with Software Development at the University of Liverpool</h3>
+        <h2 className="text-xl text-darkGreen font-bold text-x  mb-5">Embedded Systems, Web Development, Computer Vision</h2>
+        <p className="text-2xl text-darkGreen max-w-4xl">
           Hi! I&apos;m a software engineer with an insatiable thirst for knowledge, and a passion for building new things.<span> </span>  
           <Link href='/about' className=" text-mainBrown hover:text-secondaryBrown">
-          Learn more about me! 
+          Learn more about me! <i className="fa-solid fa-user-plus scale-75"></i>
           </Link>  
         </p>
       </section>
@@ -31,8 +32,8 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           {/* Project Card */}
-          <Link href='/projects/karting-site'>
-          <div className="border rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+          <Link href='/project/karting-site'>
+          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
             <div className="aspect-video relative">
               <Image
                 src="/Screenshot_20240815_172255_WhatsApp.jpg"
@@ -49,8 +50,8 @@ export default function Home() {
           </Link>
 
           {/* Project Card */}
-          <Link href='/projects/Forterra'>
-          <div className="border rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+          <Link href='/project/Forterra'>
+          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
             <div className="aspect-video relative">
               <Image
                 src="/65ca849f05a6e9da54a59fe2_Forterra.webp"
@@ -68,7 +69,7 @@ export default function Home() {
 
           {/* Project Card */}
           <Link href='/projects/Forterra'>
-          <div className="border rounded-lg overflow-hidden">
+          <div className="border shadow-md rounded-lg overflow-hidden">
             <div className="aspect-video relative transition-transform transform hover:scale-105">
               <Image
                 src="/"
@@ -86,7 +87,7 @@ export default function Home() {
 
           {/* Project Card */}
           <Link href='/projects/Forterra'>
-          <div className="border rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
             <div className="aspect-video relative">
               <Image
                 src="/project1.jpg"
@@ -104,7 +105,7 @@ export default function Home() {
 
           {/* Project Card */}
           <Link href='/projects/Forterra'>
-          <div className="border rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
             <div className="aspect-video relative">
               <Image
                 src="/project1.jpg"
@@ -134,7 +135,7 @@ export default function Home() {
           </p>
           <a
             href="mailto:aidanrouai2@gmail.com"
-            className="inline-block bg-mainGreen text-white px-6 py-2 rounded-lg hover:bg-darkGreen transition"
+            className="inline-block bg-darkGreen text-white px-6 py-2 rounded-lg hover:bg-mainGreen transition"
           >
             Contact Me
           </a>
