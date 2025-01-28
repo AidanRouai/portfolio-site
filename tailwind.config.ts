@@ -10,10 +10,9 @@ export default {
     extend: {
       colors: {
         mainWhite: "var(--mainWhite)",
-        mainBrown: "var(--mainBrown)",
-        mainGreen: "var(--mainGreen)",
-        darkGreen: "var(--darkGreen)",
-        secondaryBrown: "var(--secondaryBrown)",
+        mainPrimary: "var(--mainPrimary)",
+        mainSecondary: "var(--mainSecondary)",
+        darkSecondary: "var(--darkSecondary)",
       },
     },
   },

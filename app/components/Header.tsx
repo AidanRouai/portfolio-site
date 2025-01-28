@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-mainGreen shadow-xl rounded-bl-lg rounded-br-lg ">
+    <header className="sticky top-0 z-50 bg-mainSecondary shadow-xl rounded-bl-lg rounded-br-lg ">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-center items-center">
           {/* <Link href="/" className="text-xl font-bold">

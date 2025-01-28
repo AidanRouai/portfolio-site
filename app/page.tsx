@@ -11,17 +11,17 @@ export default function Home() {
             src="/IMG_6359.png"
             alt="My pfp"
             fill
-            className="rounded-full object-cover shadow-2xl border-mainBrown border-2"
+            className="rounded-full object-cover shadow-2xl border-mainSecondary border-2"
             style={{ objectPosition: '0 28%' }}
           />  
         </div>
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
         <h3 className="text-md font-bold mb-4">Bsc Honors Computer Science with Software Development at the University of Liverpool</h3>
-        <h2 className="text-xl text-darkGreen font-bold text-x  mb-5">Embedded Systems, Web Development, Computer Vision</h2>
-        <p className="text-2xl text-darkGreen max-w-4xl">
+        <h2 className="text-xl text-mainSecondary font-bold text-x  mb-5">Embedded Systems, Web Development, Computer Vision</h2>
+        <p className="text-2xl text-mainSecondary max-w-4xl">
           Hi! I&apos;m a software engineer with an insatiable thirst for knowledge, and a passion for building new things.<span> </span>  
-          <Link href='/about' className=" text-mainBrown hover:text-secondaryBrown">
-          Learn more about me! <i className="fa-solid fa-user-plus scale-75"></i>
+          <Link href='/about' className="underline text-mainSecondary hover:text-darkSecondary">
+          Learn more about me!<i className="fa-solid fa-user-plus scale-75"></i>
           </Link>  
         </p>
       </section>
@@ -129,13 +129,13 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
         <div className="max-w-xl">
-          <p className="text-mainGreen mb-4">
+          <p className="text-mainPrimary mb-4">
             I'm always interested in hearing about new projects and opportunities.
             Feel free to reach out!
           </p>
           <a
             href="mailto:aidanrouai2@gmail.com"
-            className="inline-block bg-darkGreen text-white px-6 py-2 rounded-lg hover:bg-mainGreen transition"
+            className="inline-block bg-mainSecondary text-white px-6 py-2 rounded-lg hover:bg-darkSecondary transition"
           >
             Contact Me
           </a>
