@@ -5,10 +5,10 @@ export default function Footer() {
         <div className="text-mainWhite flex justify-between items-center">
           <div>Aidan Rouai</div>
           <div className="flex space-x-4">
-            <a href="https://github.com/AidanRouai" className=" text-mainWhite hover:text-gray-300">
+            <a href="https://github.com/AidanRouai" className=" text-mainWhite hover:text-purple-500">
             <i className="scale-125 fa-brands fa-square-github"></i> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/aidan-rouai-66454027b/" className=" text-mainWhite hover:text-gray-300">
+            <a href="https://www.linkedin.com/in/aidan-rouai-66454027b/" className=" text-mainWhite hover:text-purple-500">
             <i className="scale-125 fa-brands fa-linkedin"></i> LinkedIn
             </a>
             <p className="text-mainWhite">

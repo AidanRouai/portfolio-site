@@ -17,10 +17,12 @@ export default function Page() {
 
       </p>
 
-      <h2 className="text-4xl font-bold mt-8 text-mainSecondary">Learn More</h2>
+      <h2 className="text-4xl font-bold mt-8 text-mainSecondary">My Education</h2>
       <p className="text-lg text-darkPrimary">
-        To learn more about my journey and projects, visit my <Link href="/" className="text-mainBrown hover:text-secondaryBrown">Home page</Link>.
+        
       </p>
+
+      
     </div>
   );
 }

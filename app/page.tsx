@@ -28,7 +28,7 @@ export default function Home() {
 
       {/* Featured Projects Section */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
+        <h2 className="text-2xl font-bold mb-6 text-mainSecondary">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           {/* Project Card */}
@@ -50,6 +50,24 @@ export default function Home() {
           </Link>
 
           {/* Project Card */}
+          <Link href='/project/CANbus'>
+          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+            <div className="aspect-video relative ">
+              <Image
+                src="/0_KR78y5yy-a_Y6nqj.png"
+                alt="Project 1"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold mb-2">CAN Bus Visualizer </h3>
+              <p className="text-gray-600 mb-4">Final year project about visualizing CAN bus log data (in progress). </p>
+            </div>
+          </div>
+          </Link>
+
+          {/* Project Card */}
           <Link href='/project/Forterra'>
           <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
             <div className="aspect-video relative">
@@ -66,60 +84,6 @@ export default function Home() {
             </div>
           </div>
           </Link>
-
-          {/* Project Card */}
-          <Link href='/projects/Forterra'>
-          <div className="border shadow-md rounded-lg overflow-hidden">
-            <div className="aspect-video relative transition-transform transform hover:scale-105">
-              <Image
-                src="/"
-                alt="Project 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="font-bold mb-2"> </h3>
-              <p className="text-gray-600 mb-4"> </p>
-            </div>
-          </div>
-          </Link>
-
-          {/* Project Card */}
-          <Link href='/projects/Forterra'>
-          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-            <div className="aspect-video relative">
-              <Image
-                src="/project1.jpg"
-                alt="Project 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="font-bold mb-2">CAN Bus Visualizer (In progress)</h3>
-              <p className="text-gray-600 mb-4">Visualizer to display OBD2 Controller Area Network log files.</p>
-            </div>
-          </div>
-          </Link>
-
-          {/* Project Card */}
-          <Link href='/projects/Forterra'>
-          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-            <div className="aspect-video relative">
-              <Image
-                src="/project1.jpg"
-                alt="Project 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="font-bold mb-2">CAN Bus Visualizer (In progress)</h3>
-              <p className="text-gray-600 mb-4">Visualizer to display OBD2 Controller Area Network log files.</p>
-            </div>
-          </div>
-          </Link>
           
         </div>
 
@@ -127,7 +91,7 @@ export default function Home() {
 
       {/* Contact Section */}
       <section>
-        <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
+        <h2 className="text-2xl text-mainSecondary font-bold mb-6">Get in Touch</h2>
         <div className="max-w-xl">
           <p className="text-mainPrimary mb-4">
             I&apos;m always interested in hearing about new projects and opportunities.
