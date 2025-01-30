@@ -10,13 +10,16 @@ export default function Page() {
         <div className="flex-1 mb-6">
           <p className="text-2xl mb-4">
             Hiya! My name is Aidan. I&apos;m a software engineer who has honed my skills in several different domains over the course of my university degree. 
-            I have lots of experience with web development technologies such as React, Node.js, Next.js, and MongoDB.
+            I have lots of experience with web development technologies such as React, Next.js, and MongoDB.
             I&apos;m also having fun learning about computer vision with OpenCV, and Pytorch for building neural networks.
             What I really love though is working with embedded systems. I have experience with CAN bus data visualization with Qt in C++, and interfacing with sensors and actuators with the help of my personal Elegoo Uno R3.   
           </p>
           <p className="text-2xl mb-4">
-            For as long as I can remember, I&apos;ve always been infatuated with cars, and video games.
-            Finding a career path that combines the physical world with the digital one is my dream, and I&apos;m learning everything that I can to make that a reality. 
+            For as long as I can remember, I&apos;ve been infatuated with cars, and video games. 
+            I picked up programming in university, and that&apos;s when I realized that a link exists between these two passions of mine. 
+            Finding a career path that combines the physical world with the digital one is my dream, and I&apos;m learning that I can to make that my reality.
+            I bought an Elegoo Uno R3 to learn the basics of embedded systems, and I love the feeling of seeing my code interact with the physical world. 
+            
           </p>
         </div>
         <div className="relative w-96 h-96 mb-6 ml-auto">
