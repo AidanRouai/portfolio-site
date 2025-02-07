@@ -10,33 +10,23 @@ export default function Projects() {
       </p>
       <h1 className="text-4xl font-bold mb-6 text-mainSecondary">My role at Forterra</h1>
       <p className="text-2xl mb-4">
-        Welcome to my projects page! Here, you can find a selection of projects that I have worked on during my studies and personal endeavors. 
-        Each project showcases my skills in various technologies and my passion for creating innovative solutions.
-      </p>
-      
-      <h2 className="text-4xl font-bold mt-8 text-mainSecondary">The Team</h2>
-      <ul className="list-disc list-inside mb-4">
-        <li>
-          <Link href="/projects/university-karting-championship" className="text-mainBrown hover:text-secondaryBrown">
-            University Karting Championship
-          </Link>: A MERN-based leaderboard actively used by the UoL racing society.
-        </li>
-        <li>
-          <Link href="/projects/forterra" className="text-mainBrown hover:text-secondaryBrown">
-            Forterra
-          </Link>: Software Engineering Internship project focused on sustainable development.
-        </li>
-        <li>
-          <Link href="/projects/can-bus-visualizer" className="text-mainBrown hover:text-secondaryBrown">
-            CAN Bus Visualizer
-          </Link>: A tool for visualizing OBD2 Controller Area Network log files.
-        </li>
-        {/* Add more projects as needed */}
-      </ul>
+        At Forterra, formerly known as Robotic Research (RRAI), I worked as a Software Engineering Intern. 
+        I earned this internship after my first year of university, and I was able to work there over the summer of 2023. 
+        My main responsibilities were to develop and improve a bill of materials in Python created by a former intern at the company and list the components in a hierarchical order on an excel document.
+        I was under the supervision of a senior software engineer, and a mechanical engineer at the company. 
+        In addition to my tasks, I had to learn Git and Gitlab, perform technical support for employees at the company, and attend weekly sprint meetings.
+        This taught me so much about working in a professional environment, and what the daily life of a software engineer is like. 
+      </p>      
 
-      <h2 className="text-4xl font-bold mt-8 text-mainSecondary">Learn More</h2>
-      <p className="text-lg text-darkPrimary">
-        To learn more about my journey and skills, visit my <Link href="/about" className="text-mainBrown hover:text-secondaryBrown">About page</Link>.
+      <h2 className="text-4xl font-bold mt-8 text-mainSecondary">What I learned</h2>
+      <p className="text-2xl text-darkPrimary">
+        <ul>
+          <li>Working as a software engineer in a professional environment</li>
+          <li>Effective communication with team members effectively</li>
+          <li>The ins and outs of Git and Gitlab</li>
+          <li>How to use Python to automate tasks</li>
+          <li>The dynamics of working with mentors to improve my skills</li>
+        </ul>
       </p>
     </div>
   );

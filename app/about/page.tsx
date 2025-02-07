@@ -33,8 +33,11 @@ export default function Page() {
         </div>
       </div>
       <h2 className="text-4xl font-bold mt-8 text-mainSecondary">My Education</h2>
-      <p className="text-lg text-darkPrimary">
-        {/* Education details can go here */}
+      <p className="text-2xl text-darkPrimary">
+        Bsc (Honours) Computer Science with Software Development, University of Liverpool (2022-2025)
+      </p>
+      <p className="text-2xl text-darkPrimary">
+        Semester abroad at the University of Guelph (September 2023 - December 2023)
       </p>
     </div>
   );
