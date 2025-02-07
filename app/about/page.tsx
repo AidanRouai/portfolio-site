@@ -7,7 +7,7 @@ export default function Page() {
       <p><Link href="/" className="text-mainSecondary"><i className=" size-7 fa-solid fa-arrow-left"></i>Back to home</Link></p>
       <h1 className="text-4xl font-bold mb-6 text-mainSecondary">About Me</h1>
       <div className='flex flex-wrap'>
-        <div className="flex-1 mb-6">
+        <div className="flex-1 mb-6 mr-8">
           <p className="text-2xl mb-4">
             Hiya! My name is Aidan. I&apos;m a software engineer who has honed my skills in several different domains over the course of my university degree. 
             I have lots of experience with web development technologies such as React, Next.js, and MongoDB.
@@ -22,7 +22,7 @@ export default function Page() {
             
           </p>
         </div>
-        <div className="relative w-96 h-96 mb-6 ml-auto">
+        <div className="relative flex w-96 h-96 mb-6 ml-auto">
           <Image
             src="/IMG_0156.jpg"
             alt="Monaco"
@@ -34,10 +34,10 @@ export default function Page() {
       </div>
       <h2 className="text-4xl font-bold mt-8 text-mainSecondary">My Education</h2>
       <p className="text-2xl text-darkPrimary">
-        Bsc (Honours) Computer Science with Software Development, University of Liverpool (2022-2025)
+        Bsc (Honours) Computer Science with Software Development, <b className="text-mainSecondary">University of Liverpool</b> (2022-2025)
       </p>
       <p className="text-2xl text-darkPrimary">
-        Semester abroad at the University of Guelph (September 2023 - December 2023)
+        Semester abroad at the <b className="text-mainSecondary">University of Guelph</b> (September 2023 - December 2023)
       </p>
     </div>
   );

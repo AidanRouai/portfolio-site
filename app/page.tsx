@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
         <h3 className="text-md font-bold mb-4">Bsc Honors Computer Science with Software Development at the University of Liverpool</h3>
-        <h2 className="text-xl text-mainSecondary font-bold text-x  mb-5">Embedded Systems, Web Development, Computer Vision</h2>
+        <h2 className="text-xl text-mainSecondary font-bold text-x  mb-5">Software Engineer, Embedded Systems</h2>
         <p className="text-2xl text-mainSecondary max-w-4xl">
           Hi! I&apos;m a software engineer with an insatiable thirst for knowledge, and a passion for building new things.<span> </span>  
           <Link href='/about' className="underline text-mainSecondary hover:text-darkSecondary">
