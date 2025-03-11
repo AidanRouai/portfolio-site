@@ -9,10 +9,10 @@ export default function Page() {
       <div className='flex flex-wrap'>
         <div className="flex-1 mb-6 mr-8">
           <p className="text-2xl mb-4">
-            Hiya! My name is Aidan. I&apos;m a software engineer who has honed my skills in several different domains over the course of my university degree. 
-            I have lots of experience with web development technologies such as React, Next.js, and MongoDB.
-            I&apos;m also having fun learning about computer vision with OpenCV, and Pytorch for building neural networks.
-            What I really love though is working with embedded systems. I have experience with CAN bus data visualization with Qt in C++, and interfacing with sensors and actuators with the help of my personal Elegoo Uno R3.   
+            Hi! My name is Aidan. I&apos;m a software engineer who has honed my skills in several different domains over the course of my bachelors degree. 
+            I have extensive experience in computer vision working with neural networks, and robot perception. 
+            I&apos;m most familiar with PyTorch, and have experience with OpenCV doing tasks like image classification, object detection, and grasp detection. 
+            I also really love  working with embedded systems. I have experience with CAN bus data visualization with Qt in C++, and interfacing with sensors and actuators with the help of my personal Elegoo Uno R3.   
           </p>
           <p className="text-2xl mb-4">
             For as long as I can remember, I&apos;ve been infatuated with cars, and video games. 
