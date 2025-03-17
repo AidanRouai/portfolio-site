@@ -34,10 +34,13 @@ export default function Page() {
       </div>
       <h2 className="text-4xl font-bold mt-8 text-mainSecondary">My Education</h2>
       <p className="text-2xl text-darkPrimary">
-        Bsc (Honours) Computer Science with Software Development, <b className="text-mainSecondary">University of Liverpool</b> (2022-2025)
+        Bsc (Honours) Computer Science with Software Development, <b className="text-mainSecondary">University of Liverpool</b> (2022 - 2025)
       </p>
       <p className="text-2xl text-darkPrimary">
         Semester abroad at the <b className="text-mainSecondary">University of Guelph</b> (September 2023 - December 2023)
+      </p>
+      <p className="text-2xl text-darkPrimary">
+        International Baccalaureate at the <b className="text-mainSecondary">Lycée Rochambeau</b> French International School with a specialisation in Math and Economics (2007 - 2021)
       </p>
     </div>
   );
