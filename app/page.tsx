@@ -17,11 +17,11 @@ export default function Home() {
         </div>
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
         <h3 className="text-md font-bold mb-4">Bsc Honors Computer Science with Software Development at the University of Liverpool</h3>
-        <h2 className="text-xl text-mainSecondary font-bold text-x  mb-5">Computer Vision, Embedded Systems</h2>
+        <h2 className="text-xl text-mainSecondary font-bold text-x  mb-5">Computer Vision, Embedded Systems Engineer</h2>
         <p className="text-2xl text-mainSecondary max-w-4xl">
-          Hi! I&apos;m a software engineer with an insatiable thirst for knowledge, and a passion for building new things.<span> </span>  
+        <span>Solution oriented problem solver. I&apos;m a US Citizen looking to develop my hardware and AI skills. </span>  
           <Link href='/about' className="underline text-mainSecondary hover:text-darkSecondary">
-          Learn more about me!<i className="fa-solid fa-user-plus scale-75"></i>
+          My Story<i className="fa-solid fa-arrow-up-right-from-square scale-75"></i>
           </Link>  
         </p>
       </section>
@@ -30,6 +30,25 @@ export default function Home() {
       <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6 text-mainSecondary">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+           {/* Project Card */}
+           <Link href='/project/ULM'>
+          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+            <div className="aspect-video relative">
+              <Image
+                src="/university_of_liverpool_motorsport_logo.jpeg"
+                alt="Project 4"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold mb-2">University of Liverpool Motorsport</h3>
+              <p className="text-gray-600 mb-4">Formula Student Embedded Software Engineer</p>
+            </div>
+          </div>
+          </Link>
           
           {/* Project Card */}
           <Link href='/project/karting-site'>
@@ -37,7 +56,7 @@ export default function Home() {
             <div className="aspect-video relative">
               <Image
                 src="/Screenshot_20240815_172255_WhatsApp.jpg"
-                alt="Project 2"
+                alt="Project 1"
                 fill
                 className="object-cover"
               />
@@ -55,7 +74,7 @@ export default function Home() {
             <div className="aspect-video relative ">
               <Image
                 src="/0_KR78y5yy-a_Y6nqj.png"
-                alt="Project 1"
+                alt="Project 2"
                 fill
                 className="object-cover"
               />
@@ -73,7 +92,7 @@ export default function Home() {
             <div className="aspect-video relative">
               <Image
                 src="/65ca849f05a6e9da54a59fe2_Forterra.webp"
-                alt="Project 1"
+                alt="Project 3"
                 fill
                 className="object-cover"
               />
