@@ -3,23 +3,14 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="py-12">
+    <div className="py-12 min-h-screen items-center">
       {/* Hero Section */}
-      <section className="text-left mb-16">
-        <div className="relative w-60 h-60 mb-6 ">
-          <Image
-            src="/IMG_6359.png"
-            alt="My pfp"
-            fill
-            className="rounded-full object-cover shadow-2xl border-mainSecondary border-2"
-            style={{ objectPosition: '0 28%' }}
-          />  
-        </div>
+      <section className="text-center items-center mb-16">
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
         <h3 className="text-md font-bold mb-4">Bsc Honors Computer Science with Software Development at the University of Liverpool</h3>
         <h2 className="text-xl text-mainSecondary font-bold text-x  mb-5">Computer Vision, Embedded Systems Engineer</h2>
-        <p className="text-2xl text-mainSecondary max-w-4xl">
-        <span>Solution oriented problem solver. I&apos;m a US Citizen looking to develop my hardware and AI skills. </span>  
+        <p className="text-2xl text-mainSecondary max-w-4xl justify-center mx-auto mb-4">
+        <span className='text-center'>Solution oriented problem solver. I&apos;m a US Citizen looking to develop my hardware and AI skills.</span>  
           <Link href='/about' className="underline text-mainSecondary hover:text-darkSecondary">
           My Story<i className="fa-solid fa-arrow-up-right-from-square scale-75"></i>
           </Link>  
@@ -28,7 +19,7 @@ export default function Home() {
 
       {/* Featured Projects Section */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold mb-6 text-mainSecondary">Featured Projects</h2>
+        <h2 className="text-2xl font-bold mb-6 text-mainSecondary">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
 
@@ -45,7 +36,7 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="font-bold mb-2">University of Liverpool Motorsport</h3>
-              <p className="text-gray-600 mb-4">Formula Student Embedded Software Engineer</p>
+              <p className="text-white-600 mb-4">Formula Student Embedded Software Engineer</p>
             </div>
           </div>
           </Link>
@@ -63,7 +54,7 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="font-bold mb-2">University Karting Championship</h3>
-              <p className="text-gray-600 mb-4">MERN based leaderboard actively being used by the UoL racing society.</p>
+              <p className="text-white-600 mb-4">MERN based leaderboard actively being used by the UoL racing society.</p>
             </div>
           </div>
           </Link>
@@ -81,7 +72,7 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="font-bold mb-2">CAN Bus Visualizer </h3>
-              <p className="text-gray-600 mb-4">Final year project about visualizing CAN bus log data (in progress). </p>
+              <p className="text-white-600 mb-4">Final year project about visualizing CAN bus log data (in progress). </p>
             </div>
           </div>
           </Link>
@@ -99,7 +90,7 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="font-bold mb-2">Forterra</h3>
-              <p className="text-gray-600 mb-4">Software Engineering Internship</p>
+              <p className="text-white-600 mb-4">Software Engineering Internship</p>
             </div>
           </div>
           </Link>

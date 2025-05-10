@@ -3,15 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --mainWhite: #f2efec;
+  --mainWhite: #fcfbfc;
   --mainPrimary: #1b1c1c;
-  --mainSecondary: #4b12b4; 
-  --darkSecondary: #341275; 
+  --mainSecondary: #ebe1e1; 
+  --darkSecondary: #959299;
+  --backgroundGradient1: #4d8baf;
+  --backgroundGradient2: #0f4f6e; 
 }
 
 body {
-  color: var(--mainBrown);
-  background: var(--mainWhite);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--mainSecondary);
+  background: linear-gradient(to bottom, var(--backgroundGradient1) 10%, var(--backgroundGradient2) 50%);
+  background-attachment: fixed;
+  font-family: 'Monaco', monospace;
 
 }
