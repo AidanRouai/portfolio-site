@@ -9,7 +9,7 @@ export default function Header() {
           {/* <Link href="/" className="text-xl font-bold">
             Aidan Rouai 
           </Link> */}
-          <nav className="flex justify-center space-x-4 bg-mainWhite opacity-60 rounded-full px-4 py-2">
+          <nav className="flex justify-center space-x-4 bg-mainWhite opacity-60 rounded-full px-4 py-2 text-mainPrimary hover:text-darkSecondary">
             <Link href="/" className="text-mainPrimary hover:text-darkSecondary">
               Home
             </Link>

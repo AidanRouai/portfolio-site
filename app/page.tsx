@@ -109,7 +109,7 @@ export default function Home() {
           </p>
           <a
             href="mailto:aidanrouai2@gmail.com"
-            className="inline-block bg-mainSecondary text-white px-6 py-2 rounded-lg hover:bg-darkSecondary transition"
+            className="inline-block bg-mainSecondary text-blue-400 px-6 py-2 rounded-lg hover:bg-darkSecondary transition"
           >
             Contact Me
           </a>
