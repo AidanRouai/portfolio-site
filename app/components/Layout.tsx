@@ -4,9 +4,13 @@ import GLSLBackground from './GLSLBackground'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <GLSLBackground />
-      {children}
+      <Header />
+      <main className="flex-1">
+        {children}
+      </main>
+      <Footer />
     </div>
   )
 }
