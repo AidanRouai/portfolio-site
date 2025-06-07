@@ -13,8 +13,7 @@
 
 body {
   color: var(--mainSecondary);
-  background: linear-gradient(to bottom, var(--backgroundGradient1) 10%, var(--backgroundGradient2) 50%);
-  background-attachment: fixed;
+  /* background: linear-gradient(to bottom, var(--backgroundGradient1) 10%, var(--backgroundGradient2) 50%); */
+  /* background-attachment: fixed; */
   font-family: 'Monaco', monospace;
-
 }

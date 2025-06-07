@@ -15,10 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script src="https://kit.fontawesome.com/8a952142e1.js" strategy="lazyOnload" />
       <body>
+        <Script src="https://kit.fontawesome.com/8a952142e1.js" strategy="lazyOnload" />
         <Layout>{children}</Layout>
       </body>
     </html>
   )
-} 
+}
