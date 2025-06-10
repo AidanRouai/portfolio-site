@@ -25,8 +25,8 @@ export default function Home() {
 
            {/* Project Card */}
            <Link href='/project/ULM'>
-          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-            <div className="aspect-video relative">
+           <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-2/3 aspect-[2/3]">
+            <div className="h-3/5 relative">
               <Image
                 src="/university_of_liverpool_motorsport_logo.jpeg"
                 alt="Project 4"
@@ -34,8 +34,8 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="p-4">
-              <h3 className="font-bold mb-2">University of Liverpool Motorsport</h3>
+            <div className="p-4 h-2/5 flex flex-col justify-between"> 
+            <h3 className="font-bold mb-2">University of Liverpool Motorsport</h3>
               <p className="text-white-600 mb-4">Formula Student Embedded Software Engineer</p>
             </div>
           </div>
@@ -43,8 +43,8 @@ export default function Home() {
           
           {/* Project Card */}
           <Link href='/project/karting-site'>
-          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-            <div className="aspect-video relative">
+          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-2/3 aspect-[2/3]">
+            <div className="h-3/5 relative">
               <Image
                 src="/Screenshot_20240815_172255_WhatsApp.jpg"
                 alt="Project 1"
@@ -52,7 +52,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="p-4">
+            <div className="p-4 h-2/5 flex flex-col justify-between"> 
               <h3 className="font-bold mb-2">University Karting Championship</h3>
               <p className="text-white-600 mb-4">MERN based leaderboard actively being used by the UoL racing society.</p>
             </div>
@@ -61,8 +61,8 @@ export default function Home() {
 
           {/* Project Card */}
           <Link href='/project/CANbus'>
-          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-            <div className="aspect-video relative ">
+          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-2/3 aspect-[2/3]">
+            <div className="h-3/5 relative ">
               <Image
                 src="/0_KR78y5yy-a_Y6nqj.png"
                 alt="Project 2"
@@ -70,17 +70,17 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="p-4">
+            <div className="p-4 h-2/5 flex flex-col justify-between">
               <h3 className="font-bold mb-2">CAN Bus Visualizer </h3>
-              <p className="text-white-600 mb-4">Final year project about visualizing CAN bus log data (in progress). </p>
+              <p className="text-white-600 mb-4">Final year project about visualizing CAN bus log data. </p>
             </div>
           </div>
           </Link>
 
           {/* Project Card */}
           <Link href='/project/Forterra'>
-          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-            <div className="aspect-video relative">
+          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-2/3 aspect-[2/3]">
+            <div className="h-3/5 relative">
               <Image
                 src="/65ca849f05a6e9da54a59fe2_Forterra.webp"
                 alt="Project 3"
@@ -88,7 +88,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="p-4">
+            <div className="p-4 h-2/5 flex flex-col justify-between"> {/* Added flex and height */}
               <h3 className="font-bold mb-2">Forterra</h3>
               <p className="text-white-600 mb-4">Software Engineering Internship</p>
             </div>
