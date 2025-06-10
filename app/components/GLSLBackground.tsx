@@ -20,10 +20,10 @@ function ShaderPlane() {
         uniform vec2 iResolution;
 
         #define SPIN_ROTATION -2.0
-        #define SPIN_SPEED 7.0
+        #define SPIN_SPEED 2.0
         #define OFFSET vec2(0.0)
-        #define COLOUR_1 vec4(0.871, 0.267, 0.231, 1.0)
-        #define COLOUR_2 vec4(0.0, 0.42, 0.706, 1.0)
+        #define COLOUR_1 vec4(0.058, 0.309, 0.431 , 1.0)
+        #define COLOUR_2 vec4(0.102, 0.345, 0.486, 1.0)
         #define COLOUR_3 vec4(0.086, 0.137, 0.145, 1.0)
         #define CONTRAST 3.5
         #define LIGTHING 0.4

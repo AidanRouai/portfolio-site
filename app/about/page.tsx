@@ -22,15 +22,6 @@ export default function Page() {
             
           </p>
         </div>
-        <div className="relative flex w-96 h-96 mb-6 ml-auto">
-          <Image
-            src="/IMG_0156.jpg"
-            alt="Monaco"
-            fill
-            className="relative rounded-2xl object-cover shadow-2xl"
-            style={{ objectPosition: '0px 55%' }}
-          />  
-        </div>
       </div>
       <h2 className="text-4xl font-bold mt-8 text-mainSecondary">My Education</h2>
       <p className="text-2xl text-darkPrimary">

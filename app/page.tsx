@@ -103,7 +103,7 @@ export default function Home() {
       <section>
         <h2 className="text-2xl text-mainSecondary font-bold mb-6">Get in Touch</h2>
         <div className="max-w-xl">
-          <p className="text-mainPrimary mb-4">
+          <p className="text-mainSecondary mb-4">
             I&apos;m always interested in hearing about new projects and opportunities.
             Feel free to reach out!
           </p>
