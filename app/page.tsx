@@ -12,7 +12,7 @@ export default function Home() {
         <p className="text-2xl text-mainSecondary max-w-4xl justify-center mx-auto mb-4">
         <span className='text-center'>Solution oriented problem solver. I&apos;m a US Citizen looking to develop my hardware and AI skills.</span>  
           <Link href='/about' className="underline text-mainSecondary hover:text-darkSecondary">
-          My Story<i className="fa-solid fa-arrow-up-right-from-square scale-75"></i>
+          About Me<i className="fa-solid fa-arrow-up-right-from-square scale-75"></i>
           </Link>  
         </p>
       </section>
