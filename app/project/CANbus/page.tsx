@@ -4,8 +4,8 @@ export default function Projects() {
   return (
     <div className="py-12 px-4">
       <p>
-        <Link href="/" className="text-mainSecondary">
-          <i className="size-7 fa-solid fa-arrow-left"></i> Back to home
+        <Link href="/" className="text-mainSecondary hover:underline">
+          <i className="size-7 fa-solid fa-arrow-left"></i>Back to home
         </Link>
       </p>
       <h1 className="text-4xl font-bold mb-6 text-mainSecondary">My role creating the CAN bus visualiser</h1>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Page() {
   return (
     <div className="py-12 px-4">
-      <p><Link href="/" className="text-mainSecondary"><i className=" size-7 fa-solid fa-arrow-left"></i>Back to home</Link></p>
+      <p><Link href="/" className="text-mainSecondary hover:underline"><i className=" size-7 fa-solid fa-arrow-left"></i>Back to home</Link></p>
       <h1 className="text-4xl font-bold mb-6 text-mainSecondary">About Me</h1>
       <div className='flex flex-wrap'>
         <div className="flex-1 mb-6 mr-8">
