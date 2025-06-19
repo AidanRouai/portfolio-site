@@ -25,7 +25,7 @@ export default function Home() {
 
            {/* Project Card */}
            <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-full max-w-sm aspect-[2/3]">
-           <Link href='/project/ULM'>
+           <Link href='/project/WIP'>
             <div className="h-3/5 relative">
               <Image
                 src="/university_of_liverpool_motorsport_logo.jpeg"
