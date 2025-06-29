@@ -9,20 +9,23 @@ export default function Page() {
         <div className="flex-1 mb-6 mr-8">
           <p className="text-2xl mb-4">
             Hi! My name is Aidan. I&apos;m a software engineer who has honed my skills in several different domains over the course of my bachelors degree. 
-            I have extensive experience in computer vision working with neural networks, and robot perception. 
+            I have extensive experience in the realm of AI and computer vision by learning the math behind neural networks, and robot perception. 
             I&apos;m most familiar with PyTorch, and have experience with OpenCV doing tasks like image classification, object detection, and grasp detection. 
-            I also really love  working with embedded systems. I have experience with CAN bus data visualization with Qt in C++, and interfacing with sensors and actuators with the help of my personal Elegoo Uno R3.   
+            I also really love  working with embedded systems. I have experience with CAN bus data visualization with Qt in C++, and interfacing with sensors and actuators with the help of my personal Elegoo Uno R3, and ESP32.   
           </p>
           <p className="text-2xl mb-4">
             For as long as I can remember, I&apos;ve been infatuated with cars, and video games. 
             I picked up programming in university, and that&apos;s when I realized that a link exists between these two passions of mine. 
             Finding a career path that combines the physical world with the digital one is my dream, and I&apos;m learning that I can to make that my reality.
-            I bought an Elegoo Uno R3 to learn the basics of embedded systems, and I love the feeling of seeing my code interact with the physical world. 
+            I love the feeling of seeing my code interact with the physical world. 
             
           </p>
         </div>
       </div>
       <h2 className="text-4xl font-bold mt-8 text-mainSecondary">My Education</h2>
+      <p className="text-2xl text-darkPrimary">
+        M.Eng Embedded Systems, <b className="text-mainSecondary">University of Maryland</b> Fall 2025
+      </p>
       <p className="text-2xl text-darkPrimary">
         Bsc (Honours) Computer Science with Software Development, <b className="text-mainSecondary">University of Liverpool</b> (2022 - 2025)
       </p>

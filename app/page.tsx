@@ -7,12 +7,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center max-w-4xl mx-auto mb-20">
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
-        <h3 className="text-md font-bold mb-4">Bsc Honors Computer Science with Software Development at the University of Liverpool</h3>
-        <h2 className="text-xl text-mainSecondary font-bold text-x  mb-5">Computer Vision, Embedded Systems Engineer</h2>
+        <h3 className="text-md font-bold mb-4">M.Eng in Embedded Systems at the University of Maryland</h3>
+        <h2 className="text-xl text-mainSecondary font-bold text-x  mb-5">Software Engineering with a focus on Embedded Systems, and AI </h2>
         <p className="text-2xl text-mainSecondary max-w-4xl justify-center mx-auto mb-4">
-        <span className='text-center'>Solution oriented problem solver. I&apos;m a US Citizen looking to develop my hardware and AI skills.</span>  
+        <span className='text-center'>Results-oriented engineer. I&apos;m a US Citizen looking to develop my hardware and AI skills.</span>  
           <Link href='/about' className="underline text-mainSecondary hover:text-darkSecondary">
-          About Me<i className="fa-solid fa-arrow-up-right-from-square scale-75"></i>
+          Learn more<i className="fa-solid fa-arrow-up-right-from-square scale-75"></i>
           </Link>  
         </p>
       </section>
