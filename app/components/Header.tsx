@@ -15,17 +15,17 @@ export default function Header() {
               About Me
             </Link>
             <span className="mx-2">|</span>
-            <Link href="mailto:aidanrouai2@gmail.com" className="text-mainPrimary hover:text-darkSecondary">
+            <a href="mailto:aidanrouai2@gmail.com" target="_blank" className="text-mainPrimary hover:text-darkSecondary">
               Contact 
-            </Link>
+            </a>
             <span className="mx-2">|</span>
-            <Link href="https://github.com/AidanRouai" className="text-mainPrimary hover:text-darkSecondary">
+            <a href="https://github.com/AidanRouai" target="_blank" className="text-mainPrimary hover:text-darkSecondary">
               GitHub
-            </Link>
+            </a>
             <span className="mx-2">|</span>
-            <Link href="https://www.linkedin.com/in/aidan-rouai-66454027b/" className="text-mainPrimary hover:text-darkSecondary">
+            <a href="https://www.linkedin.com/in/aidan-rouai-66454027b/" target="_blank" className="text-mainPrimary hover:text-darkSecondary">
               LinkedIn
-            </Link>
+            </a>
           </nav>
         </div>
       </nav>
