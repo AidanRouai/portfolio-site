@@ -1,4 +1,4 @@
-import Image from 'next/image'
+//import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
@@ -7,101 +7,19 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center max-w-4xl mx-auto mb-20">
         <h1 className="text-4xl font-bold mb-4">Aidan Rouai</h1>
-        <h3 className="text-md font-bold mb-4">M.Eng in Embedded Systems at the University of Maryland</h3>
-        <h2 className="text-xl text-mainSecondary font-bold text-x  mb-5">Software Engineering with a focus on Embedded Systems, and AI </h2>
+        <h3 className="text-xl font-bold mb-4">Software Engineer at JLG Industries</h3>
+        <h2 className="text-md text-mainSecondary font-bold text-x  mb-5">Specializing in CAN Bus Systems and Automated Testing Solutions</h2>
         <p className="text-2xl text-mainSecondary max-w-4xl justify-center mx-auto mb-4">
-        <span className='text-center'>Results-oriented engineer. I&apos;m a US Citizen looking to develop my hardware and AI skills.</span>  
           <Link href='/about' className="underline text-mainSecondary hover:text-darkSecondary">
-          Learn more<i className="fa-solid fa-arrow-up-right-from-square scale-75"></i>
+          About Me<i className="fa-solid fa-arrow-up-right-from-square scale-75"></i>
           </Link>  
         </p>
       </section>
 
       {/* Featured Projects Section */}
-      <section className="mb-20 max-w-7xl mx-auto">
-        <h2 className="text-2xl font-bold mb-8 text-mainSecondary">My Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      <section className="mb-20 max-w-7xl mx-auto rounded-lg p-8">
+        
 
-
-           {/* Project Card */}
-           <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-full max-w-sm aspect-[2/3]">
-           <Link href='/project/WIP'>
-            <div className="h-3/5 relative">
-              <Image
-                src="/university_of_liverpool_motorsport_logo.jpeg"
-                alt="Project 4"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4 h-2/5 flex flex-col justify-between"> 
-            <h3 className="font-bold mb-2">University of Liverpool Motorsport</h3>
-              <p className="text-white-600 mb-4">Formula Student Embedded Software Engineer</p>
-            </div>
-            </Link>
-          </div>
-          
-          
-          {/* Project Card */}
-          
-          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-full max-w-sm aspect-[2/3]">
-          <Link href='/project/karting-site'>  
-            <div className="h-3/5 relative">
-              <Image
-                src="/Screenshot_20240815_172255_WhatsApp.jpg"
-                alt="Project 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4 h-2/5 flex flex-col justify-between"> 
-              <h3 className="font-bold mb-2">University Karting Championship</h3>
-              <p className="text-white-600 mb-4">MERN based leaderboard actively being used by the UoL racing society.</p>
-            </div>
-            </Link>
-          </div>
-          
-
-          {/* Project Card */}
-          
-          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-full max-w-sm aspect-[2/3]">
-          <Link href='/project/CANbus'>
-            <div className="h-3/5 relative ">
-              <Image
-                src="/0_KR78y5yy-a_Y6nqj.png"
-                alt="Project 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4 h-2/5 flex flex-col justify-between">
-              <h3 className="font-bold mb-2">CAN Bus Visualizer </h3>
-              <p className="text-white-600 mb-4">Final year project about visualizing CAN bus log data. </p>
-            </div>
-            </Link>
-          </div>
-          
-
-          {/* Project Card */}
-          <div className="border shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-full max-w-sm aspect-[2/3]">
-          <Link href='/project/Forterra'>
-            <div className="h-3/5 relative">
-              <Image
-                src="/65ca849f05a6e9da54a59fe2_Forterra.webp"
-                alt="Project 3"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4 h-2/5 flex flex-col justify-between"> {/* Added flex and height */}
-              <h3 className="font-bold mb-2">Forterra</h3>
-              <p className="text-white-600 mb-4">Software Engineering Internship</p>
-            </div>
-            </Link>
-          </div>
-          
-          
-        </div>
       </section>
 
       {/* Contact Section */}
