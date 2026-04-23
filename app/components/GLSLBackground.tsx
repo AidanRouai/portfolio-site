@@ -75,7 +75,9 @@ function ShaderPlane() {
 
   useFrame((state) => {
     shaderMaterial.uniforms.iTime.value = state.clock.elapsedTime
-    shaderMaterial.uniforms.iResolution.value.set(window.innerWidth, window.innerHeight)
+    shaderMaterial.uniforms.iResolution.value.set(
+      state.size.width, 
+      state.size.height)
   })
 
   return (

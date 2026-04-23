@@ -3,11 +3,11 @@ import Link from 'next/link';
 export default function Page() {
   return (
     <div className="py-12 px-4 max-w-7xl mx-auto">
-      <p><Link href="/" className="text-mainSecondary hover:underline p-8"><i className=" size-7 fa-solid fa-arrow-left"></i>Back to home</Link></p>
-      <div className='grid grid-cols-3 gap-3'>
+      <p><Link href="/" className="text-mainSecondary hover:underline p-4 md:p-8"><i className="size-7 fa-solid fa-arrow-left"></i>Back to home</Link></p>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-3 mt-4'>
         {/*Col 1*/}
         <div className='flex flex-col gap-3'>
-          <section className=' bg-white/60 p-6 rounded-lg'>
+          <section className='bg-white/60 p-6 rounded-lg'>
             <h2 className="text-2xl font-bold text-mainPrimary mb-6">My Career</h2>
             <ul>
               <li>
@@ -23,14 +23,14 @@ export default function Page() {
                 </p>
               </li>
               <li>
-                <h3 className="text-xl font-bold mb-1 text-mainPrimary"><span className="text-mainPrimary">•</span>  Forterra (Formerly Robotic Research) </h3>
+                <h3 className="text-xl font-bold mb-1 text-mainPrimary"><span className="text-mainPrimary">•</span>  Forterra (Formerly Robotic Research)</h3>
                 <p className="text-gray-700 mb-4 pl-4 border-l-4 border-mainPrimary">
                   Software Engineer Intern, June - August 2023
                 </p>
               </li>
             </ul>
           </section>
-          <section className=' bg-white/60 p-6 rounded-lg'>
+          <section className='bg-white/60 p-6 rounded-lg'>
             <div>
               <h2 className="text-2xl font-bold text-mainPrimary mb-6">My Education</h2>
               <ul>
@@ -63,36 +63,23 @@ export default function Page() {
           </section>
         </div>
         {/*Col 2*/}
-        <div className='flex flex-col gap-3 col-span-2'>
-          <section className=' bg-white/60 p-6 rounded-lg '>
-            <h1 className="text-4xl font-bold mb-6 text-mainPrimary">About Me </h1>
-            <div className='flex flex-wrap'>
-              <div className="flex-1  mr-8">
-                <p className="text-lg mb-4 text-mainPrimary">
-                Hi! My name is Aidan. I&apos;m a Software Engineer at JLG Industries working on the <Link href='https://www.jlg.com/en/technology-innovation/clearsky-smart-fleet' className='text-navy-900 underline hover:text-darkSecondary'>ClearSky Connected Solutions</Link> team.
-                My role involves working with CAN Bus systems and frontend design to enhance our automated testing tool. 
-                I have already learned so much in my time at JLG and I am excited to continue growing as a developer. 
-                </p>
-              </div>
-            </div>
+        <div className='flex flex-col gap-3 md:col-span-2'>
+          <section className='bg-white/60 p-6 rounded-lg'>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">About Me</h1>
+            <p className="text-base md:text-lg mb-4 text-mainPrimary">
+              Hi! My name is Aidan. I&apos;m a Software Engineer at JLG Industries working on the <Link href='https://www.jlg.com/en/technology-innovation/clearsky-smart-fleet' className='text-navy-900 underline hover:text-darkSecondary'>ClearSky Connected Solutions</Link> team.
+              My role involves working with CAN Bus systems and frontend design to enhance our automated testing tool.
+              I have already learned so much in my time at JLG and I am excited to continue growing as a developer.
+            </p>
           </section>
-          <section className=' bg-white/60 p-6 rounded-lg '>
-            <h1 className="text-4xl font-bold mb-6 text-mainPrimary">Off Hours </h1>
-            <div className='flex flex-wrap'>
-              <div className="flex-1  mr-8">
-                <p className="text-lg mb-4 text-mainPrimary">
-                Outside of work, I enjoy driving and working on my Toyota GR86, reaching my strength training goals, and playing video games with friends.
-                </p>
-              </div>
-            </div>
+          <section className='bg-white/60 p-6 rounded-lg'>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">Off Hours</h1>
+            <p className="text-base md:text-lg mb-4 text-mainPrimary">
+              Outside of work, I enjoy driving and working on my Toyota GR86, reaching my strength training goals, and playing video games with friends.
+            </p>
           </section>
-        </div>
-        {/*Col 3*/}
-        <div className='flex flex-col gap-3'>
-          
         </div>
       </div>
     </div>
-     
   );
 }
