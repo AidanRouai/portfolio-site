@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 import Card from './Card'
 
 const cards = [
-  { title: "JLG Industries", description: "Software Engineer" },
-  { title: "Forterra", description: "Software Engineering Intern" },
-  // add more cards here
+  { title: "JLG Industries", description: "Software Engineer", link: "/projects/JLG/" },
+  { title: "Forterra", description: "Software Engineering Intern", link: "/projects/Forterra/" },
+  { title: "CAN Trace Visualizer", description: "Senior Design Project", link: "/projects/CANbus/" }
 ]
 
 export default function CardsRendering() {
@@ -26,7 +26,7 @@ export default function CardsRendering() {
             transition: 'transform 0.8s ease, opacity 0.8s ease',
           }}
         >
-          <Card title={card.title} description={card.description} />
+          <Card title={card.title} description={card.description} link={card.link} />
         </div>
       ))}
     </div>

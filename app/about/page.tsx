@@ -7,7 +7,7 @@ export default function Page() {
       <div className='grid grid-cols-1 md:grid-cols-3 gap-3 mt-4'>
         {/*Col 1*/}
         <div className='flex flex-col gap-3'>
-          <section className='bg-white/60 p-6 rounded-lg'>
+          <section className='textbox'>
             <h2 className="text-2xl font-bold text-mainPrimary mb-6">My Career</h2>
             <ul>
               <li>
@@ -30,7 +30,7 @@ export default function Page() {
               </li>
             </ul>
           </section>
-          <section className='bg-white/60 p-6 rounded-lg'>
+          <section className='textbox'>
             <div>
               <h2 className="text-2xl font-bold text-mainPrimary mb-6">My Education</h2>
               <ul>
@@ -64,16 +64,16 @@ export default function Page() {
         </div>
         {/*Col 2*/}
         <div className='flex flex-col gap-3 md:col-span-2'>
-          <section className='bg-white/60 p-6 rounded-lg'>
+          <section className='textbox'>
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">About Me</h1>
             <p className="text-base md:text-lg mb-4 text-mainPrimary">
-              Hi! My name is Aidan. I&apos;m a Software Engineer at JLG Industries working on the <Link href='https://www.jlg.com/en/technology-innovation/clearsky-smart-fleet' className='text-navy-900 underline hover:text-darkSecondary'>ClearSky Connected Solutions</Link> team.
+              Hi! My name is Aidan. I&apos;m a Software Engineer at JLG Industries working on the <Link href='https://www.jlg.com/en/technology-innovation/clearsky-smart-fleet' target='_blank' className='text-navy-900 underline hover:text-darkSecondary'>ClearSky Connected Solutions</Link> team.
               My role involves working with CAN Bus systems and frontend design to enhance our automated testing tool.
               I have already learned so much in my time at JLG and I am excited to continue growing as a developer.
             </p>
           </section>
-          <section className='bg-white/60 p-6 rounded-lg'>
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">Off Hours</h1>
+          <section className='textbox'>
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">Offline</h1>
             <p className="text-base md:text-lg mb-4 text-mainPrimary">
               Outside of work, I enjoy driving and working on my Toyota GR86, reaching my strength training goals, and playing video games with friends.
             </p>

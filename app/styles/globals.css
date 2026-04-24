@@ -35,7 +35,6 @@ body {
   
   .card {
 
-    /* w-64 h-96 bg-white rounded-lg shadow-2xl flex items-center justify-center  */
     width: 250px;
     height: 350px;
     background: white;
@@ -60,4 +59,10 @@ body {
     box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
   }
 
+  .textbox{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color : var(--mainPrimary);
+  }
 

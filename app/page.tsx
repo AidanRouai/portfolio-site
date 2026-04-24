@@ -11,7 +11,7 @@ export default function Home() {
         <h3 className="text-lg md:text-xl font-bold mb-4">Software Engineer at JLG Industries</h3>
         <h2 className="text-sm md:text-md text-mainSecondary font-bold mb-5">Specializing in CAN Bus Systems and Automated Testing Solutions</h2>
         <button className="text-lg md:text-xl bold bg-white rounded-lg text-mainPrimary justify-center mx-auto mb-4 hover:bg-darkSecondary transition px-4 py-1">
-          <Link href='/about' className="">
+          <Link href='/about'>
           About Me
           </Link>  
         </button>
@@ -19,7 +19,6 @@ export default function Home() {
 
       {/* Featured Projects Section */}
       <section className="mb-12 md:mb-20 max-w-7xl mx-auto rounded-lg p-4 md:p-8">
-        <h2 className="text-2xl text-mainSecondary font-bold mb-6">Featured Projects</h2>
         <div className='flex flex-col md:flex-row gap-6 justify-center items-center'>
           <CardsRendering />
         </div>
