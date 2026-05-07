@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ShowSteamStats from '../components/SteamAPI';
 
 export default function Page() {
   return (
@@ -63,20 +64,26 @@ export default function Page() {
           </section>
         </div>
         {/*Col 2*/}
-        <div className='flex flex-col gap-3 md:col-span-2'>
+        <div className='flex flex-col gap-3'>
           <section className='textbox'>
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">About Me</h1>
             <p className="text-base md:text-lg mb-4 text-mainPrimary">
               Hi! My name is Aidan. I&apos;m a Software Engineer at JLG Industries working on the <Link href='https://www.jlg.com/en/technology-innovation/clearsky-smart-fleet' target='_blank' className='text-navy-900 underline hover:text-darkSecondary'>ClearSky Connected Solutions</Link> team.
-              My role involves working with CAN Bus systems and frontend design to enhance our automated testing tool.
+              My role involves working with CAN Bus systems and frontend design to enhance our automated testing tool, and our machine telemetry dashboard tool.
               I have already learned so much in my time at JLG and I am excited to continue growing as a developer.
             </p>
           </section>
           <section className='textbox'>
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">Offline</h1>
             <p className="text-base md:text-lg mb-4 text-mainPrimary">
-              Outside of work, I enjoy driving and working on my Toyota GR86, reaching my strength training goals, and playing video games with friends.
+              
             </p>
+          </section>
+        </div>
+        {/*Col 3*/}
+        <div className='flex flex-col gap-3'>
+          <section style={{ padding: '1rem',  }}>
+            <ShowSteamStats />
           </section>
         </div>
       </div>
