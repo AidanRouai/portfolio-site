@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import ShowSteamStats from '../components/SteamAPI';
+import ShowSteamStats from '../api/SteamAPI';
 
 export default function Page() {
   return (
     <div className="py-12 px-4 max-w-7xl mx-auto">
       <p><Link href="/" className="text-mainSecondary hover:underline p-4 md:p-8"><i className="size-7 fa-solid fa-arrow-left"></i>Back to home</Link></p>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-3 mt-4'>
+      <div className='grid grid-cols-1 md:grid-cols-4 gap-3 mt-4'>
         {/*Col 1*/}
         <div className='flex flex-col gap-3'>
           <section className='textbox'>
@@ -64,7 +64,7 @@ export default function Page() {
           </section>
         </div>
         {/*Col 2*/}
-        <div className='flex flex-col gap-3'>
+        <div className='flex flex-col gap-3 md:col-span-2'>
           <section className='textbox'>
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">About Me</h1>
             <p className="text-base md:text-lg mb-4 text-mainPrimary">
@@ -80,9 +80,9 @@ export default function Page() {
             </p>
           </section>
         </div>
-        {/*Col 3*/}
+        {/*Col 4*/}
         <div className='flex flex-col gap-3'>
-          <section style={{ padding: '1rem',  }}>
+          <section>
             <ShowSteamStats />
           </section>
         </div>

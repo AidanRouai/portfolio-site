@@ -1,5 +1,5 @@
 import type { Game, RecentlyPlayedGamesResponse, UserStatsForGameResponse, UserCard } from '../types/steam';
-import SteamCarousel from './SteamCarousel';
+import SteamCarousel from '../components/SteamCarousel';
         
 async function getRecentlyPlayedGames(): Promise<Game[]> {
     const response = await fetch(`https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_ID}&format=json`);

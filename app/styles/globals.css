@@ -67,15 +67,12 @@ body {
   }
 
   .carousel-container {
-    margin-top: 2rem;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 0.5rem;
-    width: 15rem;
-    height: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 20rem;
   }
-/* border rounded-lg m-2 text-center py-5 px-3 bg-white/50 backdrop-blur w- */

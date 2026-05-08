@@ -10,11 +10,12 @@ export default function SteamCarousel({ stats }: { stats: UserCard[] }) {
     return (
         <div className="flex flex-col items-center gap-4">
             <div className="carousel-container">
+                <h1 className=" text-xl mb-3 font-bold">Recently Played Games</h1>
                 <div className="mb-3 flex justify-center mt-auto">
-                    <Image src={`https://media.steampowered.com/steamcommunity/public/images/apps/${stat.appid}/${stat.img_icon_url}.jpg`} alt={stat.name} width={64} height={64} />
+                    <Image src={`https://cdn.akamai.steamstatic.com/steam/apps/${stat.appid}/header.jpg`} alt={stat.name} width={460} height={215} />
                 </div>
                 <h4 className="mt-auto">{stat.name}</h4>
-                <h6 className="mt-0 flex justify-center mb-3">Playtime: {Math.round(stat.playtime_forever / 60)} hours</h6>
+                <h6 className="mt-0 flex justify-center mb-3 text-md">Playtime: {Math.round(stat.playtime_forever / 60)} hours</h6>
                 <div className="flex items-center gap-4 mt-auto">
                     <button onClick={() => setIndex(i => Math.max(0, i - 1))} disabled={index === 0} className="px-3 py-1 rounded disabled:opacity-30">‹</button>
                     <span className="text-sm">{index + 1} / {stats.length}</span>
