@@ -1,7 +1,8 @@
 'use client'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useEffect, useMemo, useRef } from 'react'
-import * as THREE from 'three'
+//@ts-expect-error idk
+import * as THREE from 'three' 
 
 const TARGET_FPS = 15;
 const FRAME_INTERVAL = 1 / TARGET_FPS;

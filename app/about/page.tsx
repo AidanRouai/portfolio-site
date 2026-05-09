@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import ShowSteamStats from '../api/SteamAPI';
+import ShowSteamStats from '../api/Steam/SteamAPI';
+import TopArtistsList from '../components/TopArtistsList';
 
 export default function Page() {
   return (
@@ -68,20 +69,23 @@ export default function Page() {
           <section className='textbox'>
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">About Me</h1>
             <p className="text-base md:text-lg mb-4 text-mainPrimary">
-              Hi! My name is Aidan. I&apos;m a Software Engineer at JLG Industries working on the <Link href='https://www.jlg.com/en/technology-innovation/clearsky-smart-fleet' target='_blank' className='text-navy-900 underline hover:text-darkSecondary'>ClearSky Connected Solutions</Link> team.
-              My role involves working with CAN Bus systems and frontend design to enhance our automated testing tool, and our machine telemetry dashboard tool.
-              I have already learned so much in my time at JLG and I am excited to continue growing as a developer.
+              Hi, I'm Aidan. I'm a Software Engineer from the US with experience in frontend development, signal processing, and embedded systems.
+              I turn complex data into intuitive user experiences, and I have a passion for working across the full stack to solve challenging problems.
             </p>
           </section>
           <section className='textbox'>
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-mainPrimary">Offline</h1>
             <p className="text-base md:text-lg mb-4 text-mainPrimary">
-              
+              Outside of work, I have a couple hobbies I like to pass the time with. 
+
             </p>
           </section>
         </div>
         {/*Col 4*/}
         <div className='flex flex-col gap-3'>
+          <section>
+            <TopArtistsList />
+          </section>
           <section>
             <ShowSteamStats />
           </section>

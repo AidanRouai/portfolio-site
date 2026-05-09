@@ -1,5 +1,5 @@
-import type { Game, RecentlyPlayedGamesResponse, UserStatsForGameResponse, UserCard } from '../types/steam';
-import SteamCarousel from '../components/SteamCarousel';
+import type { Game, RecentlyPlayedGamesResponse, UserStatsForGameResponse, UserCard } from '../../types/steam';
+import SteamCarousel from '../../components/SteamCarousel';
         
 async function getRecentlyPlayedGames(): Promise<Game[]> {
     const response = await fetch(`https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_ID}&format=json`);
@@ -8,11 +8,11 @@ async function getRecentlyPlayedGames(): Promise<Game[]> {
     return (games);
 }
 
-async function getUserStatsForGame(appId: number) {
-    const response = await fetch(`https://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_ID}&appid=${appId}`);
-    const data: UserStatsForGameResponse = await response.json();
-    return data;
-}
+// async function getUserStatsForGame(appId: number) {
+//     const response = await fetch(`https://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_ID}&appid=${appId}`);
+//     const data: UserStatsForGameResponse = await response.json();
+//     return data;
+// }
 
 export default async function ShowSteamStats() {
     
