@@ -14,7 +14,7 @@ async function fetchArtists(): Promise<SpotifyArtist[]> {
 
 function getArtistLineItem(artist: SpotifyArtist) {
     return (
-        <li key={artist.id} className="flex items-center gap-3">
+        <li key={artist.id} className="flex items-center gap-3 ">
             <Image src={artist.images[0].url} alt={artist.name} width={40} height={40} className="rounded-full" /> {artist.name}
         </li>
     );
@@ -23,6 +23,7 @@ function getArtistLineItem(artist: SpotifyArtist) {
 export default function TopArtistsList() {
     const [error, setError] = useState(false);
     const [artists, setArtists] = useState<SpotifyArtist[] | null>(null);
+
     useEffect(() => {
         fetchArtists() 
         .then((data) => setArtists(data))
@@ -35,7 +36,7 @@ export default function TopArtistsList() {
     return (
         <div className="carousel-container">
             <h1 className=' text-xl mb-3 font-bold'> Favorite Artists Recently</h1>
-            <ul className="w-64">
+            <ul>
                 {artists?.map(getArtistLineItem)}
             </ul>
         </div>

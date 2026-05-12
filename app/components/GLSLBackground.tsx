@@ -24,7 +24,7 @@ function ShaderPlane() {
         uniform vec2 iResolution;
 
         #define SPIN_ROTATION -2.0
-        #define SPIN_SPEED 2.0
+        #define SPIN_SPEED 0.5
         #define OFFSET vec2(0.0)
         #define COLOUR_1 vec4(0.058, 0.309, 0.431 , 1.0)
         #define COLOUR_2 vec4(0.102, 0.345, 0.486, 1.0)
@@ -108,7 +108,7 @@ function ShaderPlane() {
 export default function GLSLBackground() {
   return (
     <div className="fixed inset-0 -z-10 w-full h-full" style={{ position: 'fixed', pointerEvents: 'none' }}>
-      <Canvas frameloop='never' dpr={1} gl={{ antialias: false, powerPreference: 'low-power' }} style={{ background: 'transparent', width: '100%', height: '100%', display: 'block' }}>
+      <Canvas  dpr={1} gl={{ antialias: false, powerPreference: 'low-power' }} style={{ background: 'transparent', width: '100%', height: '100%', display: 'block' }}>
         <ShaderPlane />
       </Canvas>
     </div>
