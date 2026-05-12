@@ -1,4 +1,4 @@
-import type { Game, RecentlyPlayedGamesResponse, UserStatsForGameResponse, UserCard } from '../../types/steam';
+import type { Game, RecentlyPlayedGamesResponse, UserCard } from '../../types/steam';
 import SteamCarousel from '../../components/SteamCarousel';
         
 async function getRecentlyPlayedGames(): Promise<Game[]> {
