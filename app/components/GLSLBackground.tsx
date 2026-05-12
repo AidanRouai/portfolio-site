@@ -1,7 +1,11 @@
 'use client'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useMemo } from 'react'
-import * as THREE from 'three'
+import { useEffect, useMemo, useRef } from 'react'
+//@ts-expect-error idk
+import * as THREE from 'three' 
+
+const TARGET_FPS = 15;
+const FRAME_INTERVAL = 1 / TARGET_FPS;
 
 function ShaderPlane() {
   const shaderMaterial = useMemo(() => {
@@ -20,7 +24,7 @@ function ShaderPlane() {
         uniform vec2 iResolution;
 
         #define SPIN_ROTATION -2.0
-        #define SPIN_SPEED 2.0
+        #define SPIN_SPEED 0.5
         #define OFFSET vec2(0.0)
         #define COLOUR_1 vec4(0.058, 0.309, 0.431 , 1.0)
         #define COLOUR_2 vec4(0.102, 0.345, 0.486, 1.0)
@@ -42,7 +46,7 @@ function ShaderPlane() {
           if(IS_ROTATE){
              speed = iTime * speed;
           }
-          speed += 302.2;
+          speed += 300.0;
           float new_pixel_angle = atan(uv.y, uv.x) + speed - SPIN_EASE*20.*(1.*SPIN_AMOUNT*uv_len + (1. - 1.*SPIN_AMOUNT));
           vec2 mid = (screenSize.xy/length(screenSize.xy))/2.;
           uv = (vec2((uv_len * cos(new_pixel_angle) + mid.x), (uv_len * sin(new_pixel_angle) + mid.y)) - mid);
@@ -51,7 +55,7 @@ function ShaderPlane() {
           speed = iTime*(SPIN_SPEED);
           vec2 uv2 = vec2(uv.x+uv.y);
           
-          for(int i=0; i < 5; i++) {
+          for(int i=0; i < 4; i++) {
               uv2 += sin(max(uv.x, uv.y)) + uv;
               uv  += 0.5*vec2(cos(5.1123314 + 0.353*uv2.y + speed*0.131121),sin(uv2.x - 0.113*speed));
               uv  -= 1.0*cos(uv.x + uv.y) - 1.0*sin(uv.x*0.711 - uv.y);
@@ -73,7 +77,20 @@ function ShaderPlane() {
     })
   }, [])
 
-  useFrame((state) => {
+  const elapsed = useRef(0);
+  const paused = useRef(false);
+
+  useEffect(() => {
+    const onVisibility = () => { paused.current = document.hidden; };
+    document.addEventListener('visibilitychange', onVisibility);
+    return () => document.removeEventListener('visibilitychange', onVisibility);
+  }, []);
+
+  useFrame((state, delta) => {
+    if (paused.current) return;
+    elapsed.current += delta;
+    if (elapsed.current < FRAME_INTERVAL) return;
+    elapsed.current = 0;
     shaderMaterial.uniforms.iTime.value = state.clock.elapsedTime
     shaderMaterial.uniforms.iResolution.value.set(
       state.size.width, 
@@ -91,7 +108,7 @@ function ShaderPlane() {
 export default function GLSLBackground() {
   return (
     <div className="fixed inset-0 -z-10 w-full h-full" style={{ position: 'fixed', pointerEvents: 'none' }}>
-      <Canvas style={{ background: 'transparent', width: '100%', height: '100%', display: 'block' }}>
+      <Canvas  dpr={1} gl={{ antialias: false, powerPreference: 'low-power' }} style={{ background: 'transparent', width: '100%', height: '100%', display: 'block' }}>
         <ShaderPlane />
       </Canvas>
     </div>

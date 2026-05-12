@@ -9,8 +9,8 @@ export default function Home() {
       <section className="text-center max-w-4xl mx-auto mb-12 md:mb-20 px-4">
         <h1 className="text-2xl md:text-4xl font-bold mb-4">Aidan Rouai</h1>
         <h3 className="text-lg md:text-xl font-bold mb-4">Software Engineer at JLG Industries</h3>
-        <h2 className="text-sm md:text-md text-mainSecondary font-bold mb-5">Specializing in CAN Bus Systems and Automated Testing Solutions</h2>
-        <button className="text-lg md:text-xl bold bg-white rounded-lg text-mainPrimary justify-center mx-auto mb-4 hover:bg-darkSecondary transition px-4 py-1">
+        <h2 className="text-sm md:text-md text-mainSecondary font-bold mb-5">Specializing in full-stack development, IoT, and signal processing solutions</h2>
+        <button className="button md:text-md ">
           <Link href='/about'>
           About Me
           </Link>  
@@ -34,7 +34,7 @@ export default function Home() {
           </p>
           <a
             href="mailto:aidanrouai2@gmail.com"
-            className="inline-block bg-mainSecondary text-blue-400 px-6 py-2 rounded-lg hover:bg-darkSecondary transition"
+            className="inline-block button"
           >
             Contact Me
           </a>

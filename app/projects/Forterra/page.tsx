@@ -21,15 +21,13 @@ export default function Projects() {
       </section>
       <section className='textbox mb-6'>
         <h2 className="text-2xl font-bold mb-6">What I learned</h2>
-        <p className="mb-4">
-          <ul>
+          <ul className="mb-4">
             <li>Working as a software engineer in a professional environment</li>
             <li>Effective communication with team members effectively</li>
             <li>The ins and outs of Git and Gitlab</li>
             <li>How to use Python to automate tasks</li>
             <li>The dynamics of working with mentors to improve my skills</li>
           </ul>
-        </p>
       </section>
     </div>
   );
