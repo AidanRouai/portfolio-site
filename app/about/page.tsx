@@ -3,6 +3,8 @@ import ShowSteamStats from '../api/Steam/SteamAPI';
 import TopArtistsList from '../components/TopArtistsList';
 import HobbiesCarousel from '../components/HobbiesCarousel';
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return (
     <div className="py-12 px-4 max-w-7xl mx-auto">
