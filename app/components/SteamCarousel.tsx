@@ -8,10 +8,10 @@ export default function SteamCarousel({ stats }: { stats: UserCard[] }) {
     const stat = stats[index];
 
     return (
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4 ">
             <div className="carousel-container">
                 <h1 className=" text-xl mb-3 font-bold">Recently Played Games</h1>
-                <div className="mb-3 flex justify-center mt-auto">
+                <div className="mb-3 flex justify-center mt-auto overflow-hidden rounded-lg max-w-xs">
                     <Image src={`https://cdn.akamai.steamstatic.com/steam/apps/${stat.appid}/header.jpg`} alt={stat.name} width={460} height={215} />
                 </div>
                 <h4 className="mt-auto">{stat.name}</h4>

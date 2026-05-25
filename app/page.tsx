@@ -19,9 +19,6 @@ export default function Home() {
 
       {/* Featured Projects Section */}
       <section className="mb-12 md:mb-20 max-w-7xl mx-auto rounded-lg p-4 md:p-8">
-        <div className='flex flex-col md:flex-row gap-6 justify-center items-center'>
-          <CardsRendering />
-        </div>
       </section>
 
       {/* Contact Section */}
