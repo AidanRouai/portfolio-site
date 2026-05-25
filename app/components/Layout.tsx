@@ -1,7 +1,7 @@
-import Header from './Header'
-import Footer from './Footer'
-import GLSLBackground from './GLSLBackground'
-import PageTransition from './PageTransition'
+import Header from "./Header";
+import Footer from "./Footer";
+import GLSLBackground from "./GLSLBackground";
+import PageTransition from "./PageTransition";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -13,5 +13,5 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

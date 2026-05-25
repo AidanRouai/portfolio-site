@@ -8,7 +8,7 @@ export default function Home() {
       <section className="text-center max-w-4xl mx-auto mb-12 md:mb-20 px-4">
         <h1 className="text-2xl md:text-4xl font-bold mb-4">Aidan Rouai</h1>
         <h3 className="text-lg md:text-xl font-bold mb-4">Software Engineer at JLG Industries</h3>
-        <h2 className="text-sm md:text-md text-mainSecondary font-bold mb-5">Specializing in full-stack development, IoT, and signal processing solutions</h2>
+        <h2 className="text-sm md:text-md text-mainSecondary font-bold mb-5">Specializing in automated testing for IoT solutions, full stack development, and signal processing</h2>
         <button className="button md:text-md ">
           <Link href='/about'>
           About Me
