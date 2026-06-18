@@ -1,24 +1,26 @@
-import './styles/globals.css'
-import Layout from './components/Layout'
-import Script from 'next/script'
-
+import "./styles/globals.css";
+import Layout from "./components/Layout";
+import Script from "next/script";
 
 export const metadata = {
-  title: 'Aidan - Portfolio',
-  description: 'Personal portfolio showcasing my projects and skills',
-}
+  title: "Aidan - Portfolio",
+  description: "Personal portfolio showcasing my projects and skills",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body>
-        <Script src="https://kit.fontawesome.com/8a952142e1.js" strategy="lazyOnload" />
+        <Script
+          src="https://kit.fontawesome.com/8a952142e1.js"
+          strategy="lazyOnload"
+        />
         <Layout>{children}</Layout>
       </body>
     </html>
-  )
+  );
 }

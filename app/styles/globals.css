@@ -5,10 +5,10 @@
 :root {
   --mainWhite: #fcfbfc;
   --mainPrimary: #1b1c1c;
-  --mainSecondary: #ebe1e1; 
+  --mainSecondary: #ebe1e1;
   --darkSecondary: #959299;
   --backgroundGradient1: #4d8baf;
-  --backgroundGradient2: #0f4f6e; 
+  --backgroundGradient2: #0f4f6e;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
   /* background: linear-gradient(to bottom, var(--backgroundGradient1) 10%, var(--backgroundGradient2) 50%); */
   background-attachment: fixed;
   background: var(--backgroundGradient2);
-  font-family: 'Monaco', monospace;
+  font-family: "Monaco", monospace;
 }
 
 .page-transition {
@@ -31,61 +31,63 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
-  }}
-  
-  .card {
+  }
+}
 
-    width: 250px;
-    height: 350px;
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    
-    /* Smooth transition for all properties */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    /* Initialize transform to prevent flickering */
-    transform: perspective(1000px) scale(1.0) translateY(0);
-  }
-  
-  .card:hover {
-    /* Rotate slightly left (-10deg) and move up (-15px) */
-    transform: perspective(1000px) scale(1.05) translateY(-20px);
-    
-    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
-  }
+.card {
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  display: flex;
+  align-items: center;
 
-  .textbox{
-    background: rgba(255, 255, 255, 0.9);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    color : var(--mainPrimary);
-  }
+  /* Smooth transition for all properties */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
-  .carousel-container {
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  /* Initialize transform to prevent flickering */
+  transform: perspective(1000px) scale(1) translateY(0);
+}
 
-  .button {
-    background: var(--mainWhite);
-    color: var(--backgroundGradient1);
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
+.card:hover {
+  /* Rotate slightly left (-10deg) and move up (-15px) */
+  transform: perspective(1000px) scale(1.05) translateY(-20px);
 
-  .button:hover {
-    background: var(--backgroundGradient1);
-    color: var(--mainWhite);
-  }
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.textbox {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--mainPrimary);
+}
+
+.carousel-container {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background: var(--mainWhite);
+  color: var(--backgroundGradient1);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: var(--backgroundGradient1);
+  color: var(--mainWhite);
+}
