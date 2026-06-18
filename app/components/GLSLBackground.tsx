@@ -1,8 +1,8 @@
-'use client'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { useEffect, useMemo, useRef } from 'react'
+"use client";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { useEffect, useMemo, useRef } from "react";
 //@ts-expect-error idk
-import * as THREE from 'three' 
+import * as THREE from "three";
 
 const TARGET_FPS = 15;
 const FRAME_INTERVAL = 1 / TARGET_FPS;
@@ -12,7 +12,7 @@ function ShaderPlane() {
     return new THREE.ShaderMaterial({
       uniforms: {
         iTime: { value: 0 },
-        iResolution: { value: new THREE.Vector2() }
+        iResolution: { value: new THREE.Vector2() },
       },
       vertexShader: `
         void main() {
@@ -73,17 +73,19 @@ function ShaderPlane() {
         void main() {
           gl_FragColor = effect(iResolution.xy, gl_FragCoord.xy);
         }
-      `
-    })
-  }, [])
+      `,
+    });
+  }, []);
 
   const elapsed = useRef(0);
   const paused = useRef(false);
 
   useEffect(() => {
-    const onVisibility = () => { paused.current = document.hidden; };
-    document.addEventListener('visibilitychange', onVisibility);
-    return () => document.removeEventListener('visibilitychange', onVisibility);
+    const onVisibility = () => {
+      paused.current = document.hidden;
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => document.removeEventListener("visibilitychange", onVisibility);
   }, []);
 
   useFrame((state, delta) => {
@@ -91,26 +93,39 @@ function ShaderPlane() {
     elapsed.current += delta;
     if (elapsed.current < FRAME_INTERVAL) return;
     elapsed.current = 0;
-    shaderMaterial.uniforms.iTime.value = state.clock.elapsedTime
+    shaderMaterial.uniforms.iTime.value = state.clock.elapsedTime;
     shaderMaterial.uniforms.iResolution.value.set(
-      state.size.width, 
-      state.size.height)
-  })
+      state.size.width,
+      state.size.height,
+    );
+  });
 
   return (
     <mesh>
       <planeGeometry args={[2, 2]} />
       <primitive object={shaderMaterial} attach="material" />
     </mesh>
-  )
+  );
 }
 
 export default function GLSLBackground() {
   return (
-    <div className="fixed inset-0 -z-10 w-full h-full" style={{ position: 'fixed', pointerEvents: 'none' }}>
-      <Canvas  dpr={1} gl={{ antialias: false, powerPreference: 'low-power' }} style={{ background: 'transparent', width: '100%', height: '100%', display: 'block' }}>
+    <div
+      className="fixed inset-0 -z-10 w-full h-full"
+      style={{ position: "fixed", pointerEvents: "none" }}
+    >
+      <Canvas
+        dpr={1}
+        gl={{ antialias: false, powerPreference: "low-power" }}
+        style={{
+          background: "transparent",
+          width: "100%",
+          height: "100%",
+          display: "block",
+        }}
+      >
         <ShaderPlane />
       </Canvas>
     </div>
-  )
+  );
 }

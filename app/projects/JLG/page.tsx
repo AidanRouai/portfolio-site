@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -8,15 +8,12 @@ export default function Projects() {
           <i className="size-7 fa-solid fa-arrow-left"></i>Back to home
         </Link>
       </p>
-      <section className='textbox mb-6 width-'>
+      <section className="textbox mb-6 width-">
         <h1 className="text-2xl font-bold mb-6">My role at Forterra</h1>
-        <p className="mb-4">
-         
-        </p>      
+        <p className="mb-4"></p>
       </section>
-      <section className='textbox mb-6'>
+      <section className="textbox mb-6">
         <h2 className="text-2xl font-bold mb-6">Learning Outcomes</h2>
-
       </section>
     </div>
   );
